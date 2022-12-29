@@ -6,9 +6,9 @@ import cv2
 import os
 
 detected_word = []
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\kytan\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
-imagedir = ("C:\\Users\\kytan\\Desktop\\extractKey\\image")
-text = docx2txt.process("C:\\Users\\kytan\\Desktop\\extractKey\\text1.docx", 'C:\\Users\\kytan\\Desktop\\extractKey\\image') 
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\Tesseract-OCR\tesseract.exe'
+imagedir = ("C:\\Users\\image")
+text = docx2txt.process("C:\\Users\\text1.docx", 'C:\\Users\\image') 
 
 for image in os.listdir(imagedir):
     image_path = os.path.join(imagedir,image)
